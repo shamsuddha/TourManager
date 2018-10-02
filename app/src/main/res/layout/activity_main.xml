@@ -1,61 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="10dp"
-    tools:context=".MainActivity">
-
-
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/logo"
-        android:layout_gravity="center"
-        />
-    <TextView
-        android:id="@+id/appTitleTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tour Manager"
-        android:textSize="30sp"
-        android:fontFamily="sans-serif-smallcaps"
-        android:gravity="center_horizontal"
-        android:textColor="#367FBA"
-        />
-
-    <TextView
-        android:layout_marginTop="10dp"
-        android:id="@+id/loginTitleTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Please Login to Continue"
-        android:textSize="18sp"
-        android:fontFamily="sans-serif-smallcaps"
-        android:gravity="center_horizontal"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Email Address: "
-        android:inputType="textEmailAddress"
-        />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password: "
-        android:inputType="textPassword"
-        />
-<Button
-    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Login"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        tools:context=".MainActivity">
 
-    />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/appTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tour Manager"
+            android:textSize="26dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center_horizontal"
+            android:textColor="#367FBA"
+            />
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/loginTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please Login to Continue"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center_horizontal"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/inputEmailET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/loginEmailAddressET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address: "
+                android:inputType="textEmailAddress"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/inputPasswordET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/loginPasswordET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password: "
+                android:inputType="textPassword"
+                /> </android.support.design.widget.TextInputLayout>
+
+        <Button android:id="@+id/loginButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:background="#367FBA"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"/>
 
 
-</LinearLayout>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/forgetPasswordTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forget Password?"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center_horizontal"
+            />
+
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:id="@+id/registerTextViewFirst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Account? Please"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:id="@+id/registerTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register..."
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

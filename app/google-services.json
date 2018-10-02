@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "446804971699",
+    "firebase_url": "https://hello-1537859155207.firebaseio.com",
+    "project_id": "hello-1537859155207",
+    "storage_bucket": "hello-1537859155207.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446804971699:android:ba258288a5227ecf",
+        "android_client_info": {
+          "package_name": "com.example.shamsuddha.tourmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446804971699-b8pbmrqda08rk6jdn3seu2vefi7mu6ir.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shamsuddha.tourmanager",
+            "certificate_hash": "00f5276357c45cec3e8e04323eb78e5c6b498def"
+          }
+        },
+        {
+          "client_id": "446804971699-oidcm7u86svafq9qm8hjilkvte59qtau.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX4wamPWZIwf8rejAzktAtSHBb_7clCGk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446804971699-oidcm7u86svafq9qm8hjilkvte59qtau.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
