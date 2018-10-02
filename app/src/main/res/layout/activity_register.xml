@@ -39,14 +39,15 @@
                 android:textColor="#367FBA"
                 />
             <TextView
-                android:textColor="#505050"
-                android:textSize="18sp"
-                android:layout_marginLeft="10dp"
-                android:text="Please fill to register..."
-                android:layout_marginTop="25dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/loginTitleTextView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="Please Register to Continue"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center_horizontal"
+                />
             <android.support.design.widget.TextInputLayout
                 android:layout_margin="5dp"
                 android:id="@+id/hello"
