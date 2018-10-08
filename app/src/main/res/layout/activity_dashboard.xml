@@ -1,23 +1,204 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#EBEBEB"
+    android:padding="10dp"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DashboardActivity">
-
-
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Dashboard"
-        android:textSize="50sp"
+        android:text="Dashboard.."
+        android:textSize="25sp"
+        android:textColor="#EF4A4B"
+        android:fontFamily="sans-serif-condensed"
         />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You can plan your tours, calculate expenses, get weather updates, nearby locations, tracking places etc...."
+        android:textSize="18sp"
+        android:textColor="#090909"
+        android:fontFamily="sans-serif"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="#DCDCDC"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/travel"
+                />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plan a Tour"
+                android:textSize="18sp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:background="#DCDCDC"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/mytravel"
+                />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Tours"
+                android:textSize="18sp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="#DCDCDC"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/nearbyplace"
+                />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nearby Places"
+                android:textSize="18sp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:background="#DCDCDC"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/weather"
+                />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weather"
+                android:textSize="18sp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="#DCDCDC"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/directions"
+                />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Direction"
+                android:textSize="18sp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:background="#DCDCDC"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/tracking"
+                />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tracking"
+                android:textSize="18sp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
 
-
-
-
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Powered By: EBAsoftware"
+        android:textSize="12sp"
+        />
+</LinearLayout>
+</ScrollView>
